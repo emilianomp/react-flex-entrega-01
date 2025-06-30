@@ -7,19 +7,24 @@ import Footer from './components/Footer/Footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ItemDetail from './components/ItemDetail/ItemDetail';
+import { ContextProvider } from '/src/context/context';
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/categoria/:categoria" element={<ItemListContainer />} />
-        <Route path="/detalle/:id" element={<ItemDetail />} />
-        <Route path="/contacto" element={<h3 className='text-center m-4'>Esta es la sección de contacto</h3>} />
-        <Route path="*" element={<Link to="/"><button className='text-center btn btn-primary m-5'>Volvé al inicio</button></Link>} />
-      </Routes>
-    </BrowserRouter>
+    <ContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria/:categoria" element={<ItemListContainer />} />
+          <Route path="/detalle/:id" element={<ItemDetail />} />
+          <Route path="/contacto" element={<h3 className='text-center m-4'>Esta es la sección de contacto</h3>} />
+          {/* <Route path="/carrito" element={<h3 className='text-center m-4'>Esta es la sección de carrito</h3>} /> */}
+          {/* <Route path="/checkout" element={<h3 className='text-center m-4'>Formulario para crear la orden de compra</h3>} /> */}          
+          <Route path="*" element={<Link to="/"><button className='text-center btn btn-primary m-5'>Volvé al inicio</button></Link>} />
+        </Routes>
+      </BrowserRouter>
+     </ContextProvider>
   );
 };
 

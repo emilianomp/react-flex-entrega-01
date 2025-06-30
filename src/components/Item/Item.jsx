@@ -1,12 +1,13 @@
 import { Link } from 'react-router';
 import './Item.css';
 
-function Item({ id, price, title, img }) {
+// function Item({ id, price, title, img }) {
+function Item({ id, price, title }) {
 
     return (
         <div className="card">
             <div className="card-image-container">
-                <img src={img} className="card-img-top" width="150" height="150" alt="product img" />
+                {/* <img src={img} className="card-img-top" width="150" height="150" alt="product img" /> */}
             </div>
             <div className="card-body">
                 <h3 className="card-title">{title}</h3>

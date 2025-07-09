@@ -30,8 +30,13 @@ function NavBar() {
                         Contacto
                     </Link>
                 </li>
+                <li>
+                    <Link to="/carrito">
+                        Carrito
+                    </Link>
+                </li>                
             </ul>
-            <CartWidget cantidad={2} />
+            <CartWidget />
         </nav>
     );
 };

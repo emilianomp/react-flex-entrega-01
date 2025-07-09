@@ -93,7 +93,6 @@ function ItemListContainer() {
                             :
                             <p>No se encontraron productos</p>
                 }
-                <button onClick={cargarProductoNuevo}>Cargar Producto</button>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar.jsx'
+import Cart from './components/Cart/Cart.jsx'
 import CartWidget from './components/CartWidget/CartWidget.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -22,14 +23,13 @@ function App() {
           <Route path="/categoria/:categoria" element={<ItemListContainer />} />
           <Route path="/detalle/:id" element={<ItemDetail />} />
           <Route path="/contacto" element={<h3 className='text-center m-4'>Esta es la sección de contacto</h3>} />
-          <Route path="/carrito" element={<h3 className='text-center m-4'>Esta es la sección de carrito</h3>} />
+          <Route path="/carrito" element={<Cart />} />
           {/* <Route path="/checkout" element={<h3 className='text-center m-4'>Formulario para crear la orden de compra</h3>} /> */}          
           <Route path="*" element={<Link to="/"><button className='text-center btn btn-primary m-5'>Volvé al inicio</button></Link>} />
         </Routes>
       </BrowserRouter>
       <Footer />
      </ContextProvider>
-
   );
 };
 

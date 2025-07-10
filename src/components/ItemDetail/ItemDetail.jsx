@@ -1,72 +1,93 @@
-// import { Link } from 'react-router';
-import { Link, useParams } from 'react-router';
 import './ItemDetail.css';
-import { useEffect, useState } from 'react';
-import getProducts from '../../services/mockService';
+import { useContext, useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { CartContext } from '../../context/context';
+import { toast } from 'react-toastify';
 import Loader from '../Loader/Loader';
 import Contador from '../Contador/Contador';
 
+import { db } from '../../firebaseConfig';
+import { collection, getDocs } from 'firebase/firestore';
+
 function ItemDetail() {
+  const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
 
-    const { id } = useParams();
-    const [loading, setLoading] = useState(true);
-    const [producto, setProducto] = useState({});
+  const [producto, setProducto] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [cantidad, setCantidad] = useState(1);
 
-    useEffect(() => {
-        getProducts()
-            .then(result => {
-                const product = result.find(el => el.id === id);
-                setProducto(product);
-                setLoading(false);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      setLoading(true);
+      try {
+        const productosCollection = collection(db, 'productos');
+        const snapshot = await getDocs(productosCollection);
+        const allProducts = snapshot.docs.map(doc => doc.data());
 
-            }).catch((err) => { alert(err) });
-    }, [])
+        // 🔍 Buscar producto por ID (que viene en la data, no es el ID de Firestore)
+        const encontrado = allProducts.find(prod => prod.id === id);
 
-    return (
-        loading ? <Loader /> :
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 col-md-6 offset-md-3">
-                        <div className="card text-center m-5 p-4">
-                            <div className="card-image-container">
-                                <img src={producto.img} className="card-image" width="150" height="150" alt="product img" />
-                            </div>
-                            <div className="card-content">
-                                <h3 className="card-title">{producto.title}</h3>
-                                <p className="card-description">{producto.text}</p>
-                                <p className="card-description">Quedan {producto.stock} unidades en stock!</p>
-                                <div>
-                                    <p className="card-price">$ {producto.price}</p>
-                                </div>
-                                <Link to={`/`}>
-                                    <button className="card-button btn btn-primary">Volver al inicio</button>
-                                </Link>
-                                <Contador />
-                                <button className="card-button btn btn-primary">Agregar al carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        if (encontrado) {
+          setProducto(encontrado);
+        } else {
+          toast.error('❌ Producto no encontrado');
+        }
+      } catch (error) {
+        console.error(error);
+        toast.error('⚠️ Error al cargar el producto');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  const handleAdd = () => {
+    if (producto) {
+      addToCart(producto, cantidad);
+      toast.success(`✅ "${producto.title}" agregado al carrito`, {
+        position: 'top-right',
+        autoClose: 1500,
+      });
+    }
+  };
+
+  if (loading) return <Loader />;
+
+  if (!producto) return <p className="text-center my-5">Producto no disponible</p>;
+
+  return (
+    <div className="container my-5">
+      <div className="row">
+        <div className="col-12 col-md-8 offset-md-2">
+          <div className="card text-center p-4">
+            <div className="card-image-container mb-3">
+              <img src={producto.img} className="card-image" width="200" height="200" alt={producto.title} />
             </div>
-    );
-};
+            <div className="card-content">
+              <h3 className="card-title">{producto.title}</h3>
+              <p className="card-description">{producto.text}</p>
+              <p className="card-description">Quedan {producto.stock} unidades en stock</p>
+              <p className="card-price fw-bold fs-4">$ {producto.price}</p>
+
+              <Contador cantidad={cantidad} setCantidad={setCantidad} />
+
+              <div className="mt-3 d-flex justify-content-center gap-3">
+                <button className="btn btn-success" onClick={handleAdd}>
+                  Agregar al carrito
+                </button>
+                <Link to="/">
+                  <button className="btn btn-outline-primary">Volver al inicio</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default ItemDetail;
-
-
-// <div className="card">
-//     <div className="card-image-container">
-//         <img src={img} className="card-image" width="150" height="150" alt="product img" />
-//     </div>
-//     <div className="card-content">
-//         <h3 className="card-title">{title}</h3>
-//         <p className="card-description">{text}</p>
-//         <div>
-//             <p className="card-price">$ {price}</p>
-//         </div>
-//         <Link to={`detalle/${id}`}>
-//             <button className="card-button">Ver detalle</button>
-//         </Link>
-//         <button className="card-button" onClick={() => console.log("Vas a agregar al carrito a", title)}>Agregar al carrito</button>
-//     </div>
-// </div>

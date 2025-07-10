@@ -62,8 +62,17 @@ function Cart() {
       <h4 className="text-end">Total: ${getTotal()}</h4>
 
       <div className="d-flex justify-content-between mt-4">
-        <button onClick={clearCart} className="btn btn-outline-danger">
-          Vaciar carrito
+        <button
+            onClick={() => {
+                clearCart();
+                toast.success('🗑️ Carrito vaciado', {
+                position: 'top-right',
+                autoClose: 1500,
+                });
+            }}
+            className="btn btn-outline-danger"
+            >
+            Vaciar carrito
         </button>
         <button onClick={() => navigate('/checkout')} className="btn btn-success">
           Finalizar compra

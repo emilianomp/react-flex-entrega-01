@@ -47,7 +47,7 @@ function ItemDetail() {
   const handleAdd = () => {
     if (producto) {
       addToCart(producto, cantidad);
-      toast.success(`✅ "${producto.title}" agregado al carrito`, {
+      toast.success(` "${producto.title}" agregado al carrito`, {
         position: 'top-right',
         autoClose: 1500,
       });

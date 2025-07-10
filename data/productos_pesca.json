@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1",
+    "title": "Caña telescópica 3.5m",
+    "text": "Descripción de caña telescópica 3.5m para pesca deportiva.",
+    "price": 8999,
+    "img": "/img/productos/cania-01.jpg",
+    "stock": 44,
+    "category": "cañas"
+  },
+  {
+    "id": "2",
+    "title": "Caña spinning carbono",
+    "text": "Descripción de caña spinning carbono para pesca deportiva.",
+    "price": 19546,
+    "img": "/img/productos/cania-02.jpg",
+    "stock": 19,
+    "category": "cañas"
+  },
+  {
+    "id": "3",
+    "title": "Caña baitcasting 2.1m",
+    "text": "Descripción de caña baitcasting 2.1m para pesca deportiva.",
+    "price": 22615,
+    "img": "/img/productos/cania-03.jpg",
+    "stock": 18,
+    "category": "cañas"
+  },
+  {
+    "id": "4",
+    "title": "Caña surfcasting 4m",
+    "text": "Descripción de caña surfcasting 4m para pesca deportiva.",
+    "price": 14703,
+    "img": "/img/productos/cania-04.jpg",
+    "stock": 37,
+    "category": "cañas"
+  },
+  {
+    "id": "5",
+    "title": "Caña fly fishing",
+    "text": "Descripción de caña fly fishing para pesca deportiva.",
+    "price": 16109,
+    "img": "/img/productos/cania-05.jpg",
+    "stock": 10,
+    "category": "cañas"
+  },
+  {
+    "id": "6",
+    "title": "Caña trolling fibra",
+    "text": "Descripción de caña trolling fibra para pesca deportiva.",
+    "price": 7227,
+    "img": "/img/productos/cania-06.jpg",
+    "stock": 23,
+    "category": "cañas"
+  },
+  {
+    "id": "7",
+    "title": "Caña ultra ligera",
+    "text": "Descripción de caña ultra ligera para pesca deportiva.",
+    "price": 22376,
+    "img": "/img/productos/cania-07.jpg",
+    "stock": 35,
+    "category": "cañas"
+  },
+  {
+    "id": "8",
+    "title": "Caña viaje desmontable",
+    "text": "Descripción de caña viaje desmontable para pesca deportiva.",
+    "price": 14093,
+    "img": "/img/productos/cania-08.jpg",
+    "stock": 31,
+    "category": "cañas"
+  },
+  {
+    "id": "9",
+    "title": "Caña telescópica 2.4m",
+    "text": "Descripción de caña telescópica 2.4m para pesca deportiva.",
+    "price": 8104,
+    "img": "/img/productos/cania-09.jpg",
+    "stock": 10,
+    "category": "cañas"
+  },
+  {
+    "id": "10",
+    "title": "Caña spinning media acción",
+    "text": "Descripción de caña spinning media acción para pesca deportiva.",
+    "price": 23907,
+    "img": "/img/productos/cania-10.jpg",
+    "stock": 38,
+    "category": "cañas"
+  },
+  {
+    "id": "11",
+    "title": "Reel frontal Shimano",
+    "text": "Descripción de reel frontal shimano para pesca deportiva.",
+    "price": 10090,
+    "img": "/img/productos/reel-01.jpg",
+    "stock": 35,
+    "category": "reeles"
+  },
+  {
+    "id": "12",
+    "title": "Reel baitcaster Abu Garcia",
+    "text": "Descripción de reel baitcaster abu garcia para pesca deportiva.",
+    "price": 9336,
+    "img": "/img/productos/reel-02.jpg",
+    "stock": 19,
+    "category": "reeles"
+  },
+  {
+    "id": "13",
+    "title": "Reel rotativo Marine Sports",
+    "text": "Descripción de reel rotativo marine sports para pesca deportiva.",
+    "price": 11031,
+    "img": "/img/productos/reel-03.jpg",
+    "stock": 47,
+    "category": "reeles"
+  },
+  {
+    "id": "14",
+    "title": "Reel spinning Okuma",
+    "text": "Descripción de reel spinning okuma para pesca deportiva.",
+    "price": 16716,
+    "img": "/img/productos/reel-04.jpg",
+    "stock": 20,
+    "category": "reeles"
+  },
+  {
+    "id": "15",
+    "title": "Reel de fly Okuma",
+    "text": "Descripción de reel de fly okuma para pesca deportiva.",
+    "price": 10405,
+    "img": "/img/productos/reel-05.jpg",
+    "stock": 19,
+    "category": "reeles"
+  },
+  {
+    "id": "16",
+    "title": "Reel frontal Daiwa",
+    "text": "Descripción de reel frontal daiwa para pesca deportiva.",
+    "price": 20743,
+    "img": "/img/productos/reel-06.jpg",
+    "stock": 18,
+    "category": "reeles"
+  },
+  {
+    "id": "17",
+    "title": "Reel baitcaster Quantum",
+    "text": "Descripción de reel baitcaster quantum para pesca deportiva.",
+    "price": 15868,
+    "img": "/img/productos/reel-07.jpg",
+    "stock": 37,
+    "category": "reeles"
+  },
+  {
+    "id": "18",
+    "title": "Reel frontal Mitchell",
+    "text": "Descripción de reel frontal mitchell para pesca deportiva.",
+    "price": 19105,
+    "img": "/img/productos/reel-08.jpg",
+    "stock": 26,
+    "category": "reeles"
+  },
+  {
+    "id": "19",
+    "title": "Reel trolling Penn",
+    "text": "Descripción de reel trolling penn para pesca deportiva.",
+    "price": 13516,
+    "img": "/img/productos/reel-09.jpg",
+    "stock": 15,
+    "category": "reeles"
+  },
+  {
+    "id": "20",
+    "title": "Reel de pesca ultraligero",
+    "text": "Descripción de reel de pesca ultraligero para pesca deportiva.",
+    "price": 18482,
+    "img": "/img/productos/reel-10.jpg",
+    "stock": 18,
+    "category": "reeles"
+  },
+  {
+    "id": "21",
+    "title": "Caja de pesca multiusos",
+    "text": "Descripción de caja de pesca multiusos para pesca deportiva.",
+    "price": 9515,
+    "img": "/img/productos/accesorios-01.jpg",
+    "stock": 39,
+    "category": "accesorios"
+  },
+  {
+    "id": "22",
+    "title": "Anzuelos surtidos",
+    "text": "Descripción de anzuelos surtidos para pesca deportiva.",
+    "price": 9007,
+    "img": "/img/productos/accesorios-02.jpg",
+    "stock": 20,
+    "category": "accesorios"
+  },
+  {
+    "id": "23",
+    "title": "Plomadas variadas",
+    "text": "Descripción de plomadas variadas para pesca deportiva.",
+    "price": 15129,
+    "img": "/img/productos/accesorios-03.jpg",
+    "stock": 15,
+    "category": "accesorios"
+  },
+  {
+    "id": "24",
+    "title": "Líneas armadas 3 anzuelos",
+    "text": "Descripción de líneas armadas 3 anzuelos para pesca deportiva.",
+    "price": 17607,
+    "img": "/img/productos/accesorios-04.jpg",
+    "stock": 21,
+    "category": "accesorios"
+  },
+  {
+    "id": "25",
+    "title": "Flotadores de EVA",
+    "text": "Descripción de flotadores de eva para pesca deportiva.",
+    "price": 9041,
+    "img": "/img/productos/accesorios-05.jpg",
+    "stock": 30,
+    "category": "accesorios"
+  },
+  {
+    "id": "26",
+    "title": "Moscas para fly fishing",
+    "text": "Descripción de moscas para fly fishing para pesca deportiva.",
+    "price": 12580,
+    "img": "/img/productos/accesorios-06.jpg",
+    "stock": 25,
+    "category": "accesorios"
+  },
+  {
+    "id": "27",
+    "title": "Señuelos crankbait",
+    "text": "Descripción de señuelos crankbait para pesca deportiva.",
+    "price": 10107,
+    "img": "/img/productos/accesorios-07.jpg",
+    "stock": 13,
+    "category": "accesorios"
+  },
+  {
+    "id": "28",
+    "title": "Herramienta multifunción",
+    "text": "Descripción de herramienta multifunción para pesca deportiva.",
+    "price": 12776,
+    "img": "/img/productos/accesorios-08.jpg",
+    "stock": 36,
+    "category": "accesorios"
+  },
+  {
+    "id": "29",
+    "title": "Guantes antideslizantes",
+    "text": "Descripción de guantes antideslizantes para pesca deportiva.",
+    "price": 10190,
+    "img": "/img/productos/accesorios-09.jpg",
+    "stock": 21,
+    "category": "accesorios"
+  },
+  {
+    "id": "30",
+    "title": "Gorra UV pesca",
+    "text": "Descripción de gorra uv pesca para pesca deportiva.",
+    "price": 9929,
+    "img": "/img/productos/accesorios-10.jpg",
+    "stock": 15,
+    "category": "accesorios"
+  },
+  {
+    "id": "31",
+    "title": "Remera DryFit pesca",
+    "text": "Descripción de remera dryfit pesca para pesca deportiva.",
+    "price": 21579,
+    "img": "/img/productos/otros-01.jpg",
+    "stock": 30,
+    "category": "otros"
+  },
+  {
+    "id": "32",
+    "title": "Bolso impermeable",
+    "text": "Descripción de bolso impermeable para pesca deportiva.",
+    "price": 18365,
+    "img": "/img/productos/otros-02.jpg",
+    "stock": 48,
+    "category": "otros"
+  },
+  {
+    "id": "33",
+    "title": "Lentes polarizados",
+    "text": "Descripción de lentes polarizados para pesca deportiva.",
+    "price": 12753,
+    "img": "/img/productos/otros-03.jpg",
+    "stock": 15,
+    "category": "otros"
+  },
+  {
+    "id": "34",
+    "title": "Cinturón porta accesorios",
+    "text": "Descripción de cinturón porta accesorios para pesca deportiva.",
+    "price": 18633,
+    "img": "/img/productos/otros-04.jpg",
+    "stock": 31,
+    "category": "otros"
+  },
+  {
+    "id": "35",
+    "title": "Silla plegable pesca",
+    "text": "Descripción de silla plegable pesca para pesca deportiva.",
+    "price": 13353,
+    "img": "/img/productos/otros-05.jpg",
+    "stock": 34,
+    "category": "otros"
+  },
+  {
+    "id": "36",
+    "title": "Linterna LED frontal",
+    "text": "Descripción de linterna led frontal para pesca deportiva.",
+    "price": 13836,
+    "img": "/img/productos/otros-06.jpg",
+    "stock": 17,
+    "category": "otros"
+  },
+  {
+    "id": "37",
+    "title": "Soporte de caña",
+    "text": "Descripción de soporte de caña para pesca deportiva.",
+    "price": 16909,
+    "img": "/img/productos/otros-07.jpg",
+    "stock": 27,
+    "category": "otros"
+  },
+  {
+    "id": "38",
+    "title": "Kit limpieza de reeles",
+    "text": "Descripción de kit limpieza de reeles para pesca deportiva.",
+    "price": 8520,
+    "img": "/img/productos/otros-08.jpg",
+    "stock": 14,
+    "category": "otros"
+  },
+  {
+    "id": "39",
+    "title": "Termo 1L acero",
+    "text": "Descripción de termo 1l acero para pesca deportiva.",
+    "price": 14958,
+    "img": "/img/productos/otros-09.jpg",
+    "stock": 30,
+    "category": "otros"
+  },
+  {
+    "id": "40",
+    "title": "Toalla microfibra pesca",
+    "text": "Descripción de toalla microfibra pesca para pesca deportiva.",
+    "price": 21078,
+    "img": "/img/productos/otros-10.jpg",
+    "stock": 31,
+    "category": "otros"
+  }
+]

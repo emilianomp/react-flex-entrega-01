@@ -7,7 +7,7 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <p><small>TODOS LOS DERECHOS RESERVADOS - E-COMMERCE FISH ROCK 2025</small></p>
+                        <p><small>TODOS LOS DERECHOS RESERVADOS - E-COMMERCE VAMOS AL PIQUE - PESCA 2025</small></p>
                     </div>
                 </div>
             </div>
